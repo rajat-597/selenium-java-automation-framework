@@ -1,0 +1,31 @@
+# Revision Notes
+
+- Framework = reusable infrastructure for creating, executing, maintaining, debugging and reporting tests.
+- POM = locators + page behavior.
+- Assertions stay in tests.
+- BaseTest stays thin.
+- DriverFactory creates the driver.
+- DriverManager manages driver lifecycle/access.
+- ThreadLocal isolates driver references by thread; it does not create drivers.
+- Page Objects never create browsers.
+- Use `By` locators.
+- Prefer stable locators.
+- Use explicit condition-based waits.
+- Avoid `Thread.sleep()` as normal synchronization.
+- Reusable components → `ui/components`.
+- UI-specific reusable actions → `ui/actions`.
+- Default config → environment variables → Maven parameters.
+- Never commit secrets.
+- Static data for stable values; dynamic data for uniqueness.
+- TestContext holds test-scoped values.
+- Avoid shared mutable static test data.
+- Keep tests independent.
+- Folders organize code; TestNG groups classify execution.
+- Browser is runtime configuration.
+- Parallelism is controlled.
+- Retry is configurable and should not hide genuine defects.
+- Listener captures failure evidence.
+- Useful evidence: screenshot, stack trace, logs, URL, browser, environment.
+- API and DB are supporting capabilities in this Selenium project.
+- Typical flow: API setup → UI verification → DB validation.
+- Select automation based on value, stability, repetition, determinism, frequency and maintenance cost.

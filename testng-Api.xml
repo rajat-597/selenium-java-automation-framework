@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="API Test Suite" parallel="none">
+
+    <test name="Registration and Login Flow">
+
+        <classes>
+            <class name="com.rajat.automation.tests.api.RegisterApiTest"/>
+            <class name="com.rajat.automation.tests.api.RegistrationLoginApiTest"/>
+            <class name="com.rajat.automation.tests.api.GetUserDetailsApiTest"/>
+        </classes>
+
+    </test>
+</suite>
