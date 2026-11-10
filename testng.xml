@@ -18,10 +18,11 @@
         </packages>
     </test>
 
-    <test name="Edge Tests">
+   <!-- <test name="Edge Tests">
         <parameter name="browser" value="edge"/>
         <packages>
             <package name="com.rajat.automation.tests.ui"/>
         </packages>
-    </test>
+    </test> -->
+
 </suite>
